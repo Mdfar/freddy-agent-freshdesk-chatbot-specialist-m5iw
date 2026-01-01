@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<html> <head> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <script src="https://wchat.freshchat.com/js/widget.js"></script> </head> <body> <script> window.fcWidget.init({ token: "YOUR_FRESHCHAT_TOKEN", host: "https://wchat.freshchat.com", config: { headerProperty: { hideChatButton: true // Controlled by app UI } } });
+
+    // Ensure the bot starts with a specific flow for mobile users
+    window.fcWidget.track('Mobile_App_Start', {
+        platform: "iOS/Android",
+        context: "In-App Help"
+    });
+</script>
+
+
+</body> </html>
